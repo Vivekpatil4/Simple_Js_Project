@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="div1" style="width: 100px; height: 100px;; border: 2px solid black;"></div> -->
+    <button id="btn">Red</button>
+    <button id="btn1">orange</button>
+    <button id="btn2">pink</button>
+    <button id="btn3">green</button>
+    
+</body>
+<script>
+    // let color='pink'
+    // let arr=['red','green','blue','yellow'];
+    // //let score = new Array()
+    // arr.push('pink')
+    // arr.unshift('pink')
+
+    // //arr.pop(color)
+    // //arr.shift(color)
+    // //let x=arr.indexOf('green')
+    // //Array.isArray(arr)
+    // console.log()
+
+    // let p={
+    //     name:'vivek',
+    //     lname:'Patil',
+    //     greet:function()
+    //     {
+    //         console.log('Hello , world!');
+    //     },
+    //     getName:function(){
+    //     return this.name+' '+this.lname;
+    // }
+    // };
+
+   // console.log(p.getName())
+
+   //this is backgrond changeing code
+   const divtag = document.querySelector('body');
+   const btn = document.querySelector("#btn");
+   const btn1 = document.querySelector("#btn1");
+   const btn2 = document.querySelector("#btn2");
+   const btn3 = document.querySelector("#btn3");
+
+   btn.addEventListener('click',function(){
+    divtag.style.backgroundColor="red";
+   })
+   btn1.addEventListener('click',function(){
+    divtag.style.backgroundColor="orange";
+   })
+   btn2.addEventListener('click',function(){
+    divtag.style.backgroundColor="pink";
+   })
+   btn3.addEventListener('click',function(){
+    divtag.style.backgroundColor="green";
+   })
+   
+  
+</script>
+</html>

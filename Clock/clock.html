@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Making Clock</title>
+	<style>
+	*
+	{
+		padding:0;
+		margin:0;
+	}
+	.mian_clock
+	{
+		width:100%;
+		height:100vh;
+		background-color:rgb(77, 67, 67);
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		
+	}
+	.banner
+	{
+		width: 80%;
+		height:40vh;
+		background-color: gray;
+		border-radius: 30px;
+	
+	}
+	.banner h1
+	{
+		text-align:center;
+		font-weight:500;
+		background-color: darkolivegreen;
+		border-radius: 30px 30px 0px 0px ;
+	}
+	.mid_divs
+	{
+		display:flex;
+		justify-content: center;
+		line-height:200px;
+		gap:20px;
+		font-size: 5rem;
+	} 
+	</style>
+</head>
+<body onload="refreshing(1000)">
+	
+		<div class="mian_clock">
+			<div class="banner">
+			<h1>TIME</h1>
+				<div class="mid_divs">
+					<span id="hrs">H</span>:<span id="min">M</span>:<span id="sec">S</span>
+				</div>
+			</div>
+		</div>
+	
+</body>
+<script>
+
+	let dt = new Date();
+	let stime=dt.getSeconds();
+	let mtime=dt.getMinutes();
+	let htime=dt.getHours();
+
+	let hours=document.getElementById("hrs").innerHTML=(htime);
+	let minutes=document.getElementById("min").innerHTML=(mtime);
+	let seconds=document.getElementById("sec").innerHTML=(stime);
+
+	
+	function refreshing(t)
+	{
+		setTimeout("location.reload(true);",t);
+	}
+</script>
+</html>
