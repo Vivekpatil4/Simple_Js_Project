@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .nawbar {
+        width: 100%;
+        height: 7rem;
+        background-color: rgb(130, 135, 28);
+        opacity: 0.7;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+      }
+      .nawbar .logo {
+        color: white;
+      }
+      .nawlinks {
+        display: flex;
+        gap: 5em;
+      }
+      .nawlinks li {
+        list-style: none;
+        font-size: x-large;
+        color: white;
+        cursor: pointer;
+      }
+      .Search_div input {
+        height: 5vh;
+        border: 1px solid;
+        background-color: rgb(130, 135, 28);
+      }
+
+      .Search_div input::placeholder {
+        padding: 20px;
+        color: white;
+        font-size: medium;
+      }
+      .Search_div button {
+        height: 5.5vh;
+        background-color: rgb(6, 209, 245);
+        color: white;
+      }
+
+      .main_div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        overflow-y: hidden;
+      }
+      .div1 {
+        width: 60%;
+        background-color: rgb(203, 200, 8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .div1 h1 {
+        font-size: 66px;
+      }
+      .div1 p {
+        font-size: x-large;
+      }
+      .two_btn {
+        display: flex;
+        gap: 220px;
+        margin-top: 20px;
+      }
+      .two_btn button {
+        width: 10vw;
+        height: 6vh;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: large;
+      }
+
+      .two_btn button:hover {
+        background-color: skyblue;
+        transition-duration: 200ms;
+      }
+      .div2 {
+        width: 40%;
+        background-color: aqua;
+      }
+
+      .div2 {
+        background-color: rgb(203, 200, 8);
+        overflow-y: hidden;
+      }
+      .div2 img {
+        height: 85vh;
+        margin-top: 10vh;
+      }
+
+      .section1 {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+      }
+      .section1 .div1 {
+        width: 50%;
+        height: 80vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        color: black;
+      }
+      .section1 .div1 h2 {
+        font-size: 55px;
+      }
+      .section1 .div1 p {
+        font-size: 22px;
+      }
+      .section1 .div2 {
+        width: 50%;
+        height: 80vh;
+        background-color: white;
+      }
+      .section1 .div2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title_page {
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(203, 200, 8);
+      }
+      .Font_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .Font_section h1 {
+        font-size: 60px;
+        color: white;
+        margin-top: 60px;
+      }
+      .Font_section p {
+        margin-top: 2em;
+        font-size: 23px;
+        color: white;
+      }
+      .docter_Testimonial {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        margin-top: 60px;
+      }
+      .docter_Testimonial img {
+        width: 320px;
+        border: solid 5px white;
+        object-fit: cover;
+      }
+      .slideBar {
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(229, 229, 12);
+        opacity: 0.2;
+        position: relative;
+      }
+      .slideBar img {
+        width: 100%;
+        height: 80vh;
+      }
+
+      .Icons span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Adjusts for margins */
+      }
+
+      .foots {
+        width: 100%;
+        height: 60vh;
+        background-color: black;
+        display: flex;
+      }
+      .foots .About_div {
+        width: 25%;
+        height: inherit;
+        background-color: black;
+        
+      }
+      .About_div h1{
+        text-align: center;
+        padding-top: 10%;
+        color: wheat;
+      }
+      .About_div .list
+      {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:30px;
+        margin-top: 60px;
+        color: white;
+      }
+
+      .foots .Service_div {
+        width: 25%;
+        height: inherit;
+        background-color: black;
+      }
+
+      .Service_div h1
+      {
+        text-align: center;
+        padding-top:10%;
+        color: wheat;
+      }
+      .Service_div .list
+      {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:30px;
+        margin-top: 60px;
+        color: white;
+      }
+      .Title_div
+      {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: end;
+        margin-left:350px;
+        color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nawbar">
+      <div class="logo">
+        <img src="" />
+        <h3>COMPANY LOGO</h3>
+      </div>
+
+      <div class="nawlinks">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact</li>
+      </div>
+
+      <div class="Search_div">
+        <input type="text" placeholder="Search..." /><button id="btn">
+          Search
+        </button>
+      </div>
+    </nav>
+
+    <main class="main_div">
+      <div class="div1">
+        <h1>Frist I wanted to be<br />a veterinarian</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          minima deserunt ea, maxime maiores iste<br />
+          soluta dolores dignissimos eaque.
+        </p>
+        <div class="two_btn">
+          <button>contact Us</button>
+          <button>Our Service</button>
+        </div>
+      </div>
+      <div class="div2">
+        <img src="./pngwing.com.png" />
+      </div>
+    </main>
+
+    <article class="section1">
+      <div class="div1">
+        <h2>As a veterinarian and<br />lover of animals.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          minima deserunt ea, maxime maiores iste<br />
+          soluta dolores dignissimos eaque.
+        </p>
+      </div>
+      <div class="div2">
+        <img src="./image.png" />
+      </div>
+    </article>
+
+    <div class="title_page">
+      <div class="Font_section">
+        <h1>Title Here</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit<br />
+          amet consectetur adipisicing
+        </p>
+      </div>
+      <div class="docter_Testimonial">
+        <img
+          src="https://i.pinimg.com/236x/7c/ba/c4/7cbac417063ceff6bde28547a016271e.jpg"
+        />
+        <img
+          src="https://i.pinimg.com/236x/76/6f/80/766f80c7d40ef1c4c180124e5121599c.jpg"
+        />
+        <img
+          src="https://i.pinimg.com/236x/0e/47/ea/0e47eaab34ef1d9f96757afaa6e38102.jpg"
+        />
+      </div>
+    </div>
+
+    <div class="slideBar">
+      <img
+        src="https://i.pinimg.com/564x/dd/27/7d/dd277d280beda3b651483a146a50a2a6.jpg"
+      />
+      <div class="Icons">
+        <span
+          ><i class="fa-solid fa-heart-pulse"></i>
+          <p>+35682</p>
+          <p>Happy Client</p>
+        </span>
+        <span
+          ><i class="fa-solid fa-syringe"></i>
+          <p>+36282</p>
+          <p>Department</p>
+        </span>
+        <span
+          ><i class="fa-solid fa-stethoscope"></i>
+          <p>+56182</p>
+          <p>vaccinations</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="foots">
+      <div class="About_div">
+        <h1>About</h1>
+        <div class="list">
+          <p>History</p>
+          <p>Our Team</p>
+          <p>Brand Guidelines</p>
+          <p>Terms & Condition</p>
+          <p>Privicy & Policy</p>
+        </div>
+      </div>
+      <div class="Service_div">
+        <h1>Services</h1>
+        <div class="list">
+          <p>How to Order</p>
+          <p>Our Product</p>
+          <p>Order status</p>
+          <p>Promo</p>
+          <p>Payment Method</p>
+        </div>
+      </div>
+      <div class="Title_div">
+            <h1>Title Here</h1>
+            <p>lorem aviable isupme droem itaia la ohhel wodionf</p>
+      </div>
+    </div>
+  </body>
+</html>

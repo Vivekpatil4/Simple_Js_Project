@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nawmenu
+{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(26, 129, 0, 0.95);
+    opacity: 0.7;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.logo h4
+{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+.nawlist a
+{
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.Icone
+{
+    color: white;
+    font-size: 20px;
+}
+.landingPage
+{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.landingPage .part1
+{
+    width: 50vw;
+    height: 85vh;
+    background-color: rgb(87, 239, 87);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landingPage .part1 i{
+    font-size: 4vw;
+    color: white;
+}
+.landingPage .part1 h1{
+    font-size: 5vw;
+    font-family: 'Trebuchet MS', sans-serif;
+   
+}
+
+.part1 .btn{
+    width:150px;
+    height: 5vh;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-top: 20px ;
+}
+.part1 .texts{
+    color: white;
+    font-size:18px;
+}
+.landingPage .part2
+{
+    width: 50vw;
+    height: 85vh;
+    background-color: rgb(87, 239, 87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landingPage .part2 img{
+    height: 35vw;
+}
+.menustrip
+{
+    width:100%;
+    height: 350px;
+    background-color:rgb(8, 215, 5);
+    display: flex;
+    align-items: center;
+}
+.yellowStrip
+{
+    width: 100%;
+    height:250px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.yellowStrip h1{
+    font-size: 80px;
+    margin-top: 20px;
+}
+.yellowStrip i{
+    font-size: 30px;
+}
+.yellowStrip p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.foodItemStrip
+{
+    width:100%;
+    height:auto;
+    background-color: rgb(21, 198, 9);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+     grid-gap: 20px;
+     
+}
+.foodsItem1
+{
+    width: 40vw;
+    height:35vh;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem1 img{
+    height: 200px;
+}
+.foodsItem2
+{
+    width:40vw;
+    height:35vh;
+    background-color: rgb(186, 115, 21);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem2 img{
+    height: 200px;
+}
+.foodsItem3
+{
+    width:40vw;
+    height:35vh;
+    background-color: rgba(235, 141, 19, 0.735);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem3 img{
+    height: 200px;
+}
+.foodsItem4
+{
+    width:40vw;
+    height:35vh;
+    background-color: rgb(57, 39, 16);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem4 img{
+    height: 200px;
+}
+.foodsItem5
+{
+    width:40vw;
+    height:35vh;
+    background-color: rgb(81, 69, 52);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem5 img{
+    height: 200px;
+}
+.foodsItem6
+{
+    width:40vw;
+    height:35vh;
+    background-color: rgb(230, 237, 16);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem6 img{
+    height: 200px;
+}
+.foodsItem7
+{
+    width:40vw;
+    height:35vh;
+    background-color: rgb(255, 146, 5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem7 img{
+    height: 200px;
+}
+.foodsItem8
+{
+    width:40vw;
+    height:35vh;
+    background-color: rgb(42, 24, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foodsItem8 img{
+    height: 200px;
+}
+
+.About_page
+{
+    width: 100%;
+    height: 75vh;
+    background-color: greenyellow;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.radius_Strip
+{
+    position:absolute;
+    width: 100vw;
+    height: 60vh;
+    background-color: black;
+    border-radius:260px;
+    left: 15%;
+  
+    
+}
+.radius_Strip img{
+    height: 50vh;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.About_txt
+{
+    position: absolute;
+    color: white;
+    left: 35%;
+    top: 30%;
+    text-align: center;
+    font-size: 3vw;
+}
+.Star_page
+{
+    width: 100%;
+    height: 60vh;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div1 img
+{
+    height: 20vh;
+    margin-left: 30%;
+}
+.div1 .Star_txt
+{
+    text-align: center;
+}
+.sub_page
+{
+    width: 100%;
+    height: 60vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub_page h1{
+    font-size: 10vh;
+    color: green;
+    text-align: center;
+}
+.sub_page p
+{
+    text-align: center;
+}
+.inputs #input_Section
+{
+    width: 80vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inputs input
+{
+   height: 4vh;
+   border-radius: 20px;
+   border: none; 
+}
+.inputs input::placeholder
+{
+    padding: 20px;
+    color: black;
+}
+.inputs #btns
+{
+    width: 80vh;
+    height: 5vh;
+    border-radius: 50px;
+    border: none;
+    background-color: green;
+}
+
+.footer_section
+{
+    width: 100%;
+    height: 50vh;
+    background-color: green;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+.footer_section i{
+    font-size: 3vw;
+    color: white;
+    
+}
+.footer_section p{
+    font-size: 15px;
+    color: white;
+    padding-top:10px;
+    cursor: pointer;
+}
+.footer_section p:hover{
+    font-size: 15px;
+    color: black;
+   scale:1.5;
+   transition-duration: 1s;
+
+}
